@@ -4,7 +4,7 @@ require File.join(File.dirname(__FILE__), 'lib', 'gradients', 'version')
 
 Gem::Specification.new do |s|
   s.name = 'gradients'
-  s.version = HttpRouter::VERSION
+  s.version = Gradients::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Joshua Hull"]
   s.date = '2010-07-31'
