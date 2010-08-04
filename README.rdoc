@@ -1,0 +1,15 @@
+= Gradients
+
+Make fun gradients, and then find colours within them:
+
+  Gradients.new('#000000', '#ffffff').at(0.5).to_s
+  => '808080'
+  Gradients.new('#000000', '#ffffff').at(0.5).to_s(:whex)
+  => '#808080'
+  
+Or, add lots of colours:
+  
+  Gradients.new('#000000', '#ff0000', #ffffff').at(0.75).to_s(:whex)
+  => '#ff8080'
+  
+And so forth...
