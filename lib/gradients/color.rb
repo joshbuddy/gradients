@@ -4,7 +4,7 @@ class Gradients
     def self.parse(val)
       case val
       when /^#?[0-9a-f]{6}$/i
-        new(*val[-6, 6].map{|a|a.scan(/../).map{|b|(b.hex.to_f / 255)}}.flatten)
+        new(*val.map{|a|a.scan(/../).map{|b|(b.hex.to_f / 255)}}.flatten)
       end
     end
     
