@@ -21,6 +21,4 @@ Rake::RDocTask.new do |rd|
   rd.rdoc_dir = 'rdoc'
 end
 
-require 'ext/gem_rake'
-
 Bundler::GemHelper.install_tasks
